@@ -23,13 +23,8 @@ export default {
   },
   methods: {
     setDisplay() {
-      console.log("Previewsetting value: " + this.previewDisplaySetting);
       this.previewDisplaySetting = !this.previewDisplaySetting;
-
-      console.log("Pressed editor button");
-
       let previewSetting = this.previewDisplaySetting;
-      console.log("value of previewSetting: " + previewSetting);
       this.$store.commit("toggleEditor", previewSetting);
     }
   },
@@ -52,7 +47,7 @@ export default {
 
 <style>
 #preview-container {
-  width: 25em;
+  width: 28em;
   color: white;
   flex: 1;
   background-color: black;

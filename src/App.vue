@@ -36,14 +36,7 @@ You can also make text **bold**... whoa
       let markUpText = markText;
       this.text = marked(markUpText);
     },
-    toggleEditor(data) {
-      console.log("Toggle editor method: " + data);
-      this.toggleEditor = !data;
-    },
-    toggleDisplay(data) {
-      console.log("Toggle display method: " + data);
-      this.toggleDisplay = !data;
-    }
+
   }
 };
 </script>

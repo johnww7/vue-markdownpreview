@@ -32,9 +32,7 @@ export default {
     },
     setEditor() {
       this.editorDisplaySetting = !this.editorDisplaySetting;
-      console.log("Pressed editor button");
       let editorSetting = this.editorDisplaySetting;
-      console.log("value of EditorSetting: " + editorSetting);
       this.$store.commit("togglePreview", editorSetting);
     }
   },
